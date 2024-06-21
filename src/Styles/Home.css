@@ -1,0 +1,49 @@
+.learnerBox{
+  width: 789px;
+}
+
+@media only screen and (max-width: 1086px) {
+  .learnerBox{
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 640px) {
+    .hideImage{
+      display: none;
+    }
+    .ourKeyBox{
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 40px;
+        padding: 1rem;
+    }
+    .learnerBox{
+      width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .hideImage{
+    display: none;
+  }
+  
+} 
+@media only screen and (max-width: 768px) {
+  .hideImage{
+    display: none;
+  }
+  .learnerBox{
+    width: 80%;
+  }
+}
+.boxGaping{
+  gap:10%
+}
+
+@media only screen and (max-width: 803px) {
+  .learnerBox{
+    width: 80%;
+  }
+}
+
+
+

@@ -1,0 +1,322 @@
+.SignInContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+}
+
+.signInBox1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.signInBox2 {
+  width: 50%;
+  background: #ffffff1a;
+  border-radius: 10px;
+  position: relative;
+  padding: 5rem 4rem 5rem 3rem;
+  border-image-source: linear-gradient(
+    94.94deg,
+    #ffffff -11.51%,
+    #848484 97.43%
+  );
+}
+
+.signInBox2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  background: linear-gradient(94.94deg, #ffffff -11.51%, #848484 97.43%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.learnWithUs {
+  font-size: 38px;
+
+  background: linear-gradient(92.77deg, #761de8 -2.94%, #29bdec 56.14%);
+  background-clip: text;
+  color: transparent;
+}
+
+.accessNew {
+  font-size: 38px;
+  line-height: 48px;
+
+  color: #fff;
+}
+.SignText {
+
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.userInfoText {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+}
+
+.userInfoBox {
+  background: none;
+  border: 0.5px solid #ffff;
+  border-radius: 12px;
+  height: 56px;
+  margin-top: 5px;
+  position: relative;
+  padding: 10px;
+  color: #fff;
+  background-color: none;
+}
+
+.userInfoBox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(94.94deg, #ffffff -11.51%, #848484 97.43%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-text {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.checkItem {
+  width: 24px;
+  height: 24px;
+}
+
+#marketingCheckbox {
+  width: 51px;
+  height: 24px;
+}
+
+.PhoneInputCountryIcon.PhoneInputCountryIcon--border {
+  width: 24px;
+}
+
+.PhoneBoxInput {
+  background: none;
+  border: 0.5px solid #ffff;
+  border-radius: 12px;
+  height: 56px;
+  margin-top: 5px;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  /* background-color: wheat; */
+}
+
+.PhoneInputCountry {
+  display: flex;
+  flex-direction: row-reverse;
+
+  align-items: center;
+}
+
+select.PhoneInputCountrySelect {
+  background: none;
+  width: 24px;
+}
+
+input.PhoneInputInput {
+  background: none;
+  color: #fff;
+  border: none;
+}
+
+.react-tel-input input[type="tel"] {
+  /* Your regular styles */
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  transition: border-color 0.3s ease;
+  /* Smooth transition for border color change */
+}
+
+input.PhoneInputInput[type="tel"]:focus {
+  border: none;
+}
+
+input.PhoneInputInput[type="tel"]:focus-visible {
+  border: none;
+}
+
+input.PhoneInputInput[type="tel"]::-moz-selection {
+  border: none;
+}
+
+.PhoneInput--focus {
+  border: none;
+  outline: none;
+}
+
+.signImgBox {
+  width: 100%;
+  /* max-width: 400px; */
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  background-color: #323232cc;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #000000;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid white;
+  padding: 1rem 3rem;
+  /* border-image-source: linear-gradient(94.94deg, #FFFFFF -11.51%, #848484 97.43%); */
+
+  width: 42%;
+
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  padding: 9px 45px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+button.cross {
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  font-size: 19px;
+}
+button#crossReview {
+  padding: 0.5rem;
+
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 889px) {
+  .SignInContainer {
+    flex-direction: column;
+  }
+
+  .signInBox1 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .signInBox2 {
+    width: 100%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 843px) {
+  .signImgBox {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 679px) {
+  .SignText {
+    font-size: 25px;
+  }
+  .accessNew {
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .learnWithUs {
+    font-size: 30px;
+  }
+
+  .SignInContainer {
+    gap: 2rem;
+  }
+
+  .signInBox2 {
+    padding: 1rem;
+  }
+  .signImgBox {
+    width: 100%;
+    max-width: 176px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .SignInContainer {
+    gap: 0rem;
+  }
+
+  .signImgBox {
+    display: none;
+  }
+
+  .userInfoBox {
+    padding: 8px;
+    height: 40px;
+    margin: 0.5rem 0rem;
+  }
+  .popup {
+    width: 70%;
+    padding: 1.5rem;
+  }
+}

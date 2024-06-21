@@ -1,0 +1,674 @@
+.progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 30px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.quiz-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.no-question{
+    width: 100%;
+    max-width: 865px;
+}
+
+.Dailyquiz-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    /* background-image: url(http://localhost:3001/static/media/bg-dailyQuiz.829d1b4….png); */
+    /* border: none; */
+    /* background-repeat: no-repeat; */
+    /* height: 559px; */
+    background-color: rgb(86 91 110 / 8%);
+    border-radius: 10px 0px 0px 10px;
+    /* border: 1px solid rgb(255 255 255 / 35%); */
+    box-shadow: 20px 20px 50px #302f2f85;
+    border-right: 0px;
+    margin-bottom: 20px;
+    /* align-items: center; */
+    display: flex;
+    /* justify-content: center; */
+        flex-direction: column;
+}
+
+
+
+.progress-container {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-barLine {
+    height: 2px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+}
+
+.question-count {
+    margin-top: 5px;
+    font-size: 28px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    background-clip: text;
+    color: transparent;
+    padding: 15px 0px;
+    display: flex;
+}
+
+.count-question-count {
+    margin-top: 5px;
+    font-size: 28px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    background-clip: text;
+    color: transparent;
+    padding: 0px;
+    display: flex;
+    padding-left: 15px;
+}
+
+.question-count-question {
+    margin-top: 5px;
+    font-size: 28px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    background-clip: text;
+    color: transparent;
+    display: flex;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.answer-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    flex-wrap: wrap; */
+    grid-gap: 49px;
+    margin: 70px 0px 50px 0px;
+}
+
+.DailyQuizanswer-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin: 0;
+    padding: 1rem 4rem;
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+}
+
+.daliyPerQues {
+    display: flex;
+    align-items: center;
+}
+
+.option {
+    margin-right: 5px;
+    background-color: red;
+}
+
+.next-button {
+    margin-left: auto;
+}
+
+.restart-button {
+    margin-top: 10px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    background-clip: text;
+    color: transparent;
+    font-size: 24px;
+}
+
+.question {
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    padding: 15px 0px;
+        line-height: 2rem;
+}
+
+.answer-label {
+    color: gba(220, 220, 220, 1);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    width: 434px;
+    gap: 0px;
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.ansMain {
+    color: #DCDCDC;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    width: 434px;
+    gap: 0px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.answer-option input[type="radio"] {
+    /* Define your desired width and height */
+    width: 30px;
+    height: 30px;
+    /* You can add additional styling here */
+}
+
+.daliyPerQues input[type="radio"] {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.answer-option input[type="radio"]+.answer-label::before {
+    width: 25px;
+    /* Size of the empty radio button */
+    height: 25px;
+    /* Size of the empty radio button */
+}
+
+.daliyPerQues input[type="radio"]+.ansMain::before {
+    width: 25px;
+    /* Size of the empty radio button */
+    height: 25px;
+    /* Size of the empty radio button */
+}
+
+
+.answer-option input[type="radio"]:checked+.answer-label::before {
+    width: 25px;
+    /* Size of the checked radio button */
+    height: 25px;
+    /* Size of the checked radio button */
+    background-color: #007bff;
+    /* Adjust color as needed */
+}
+
+.answer-option input[type="radio"] {
+    /* Your radio button styles */
+    /* Example color change */
+    /* background-color: #007bff !important; */
+    background-color: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%) !important;
+
+    /* Use !important to ensure it overrides other styles */
+}
+
+.daliyPerQues input[type="radio"]:checked+.ansMain::before {
+    width: 25px;
+    /* Size of the checked radio button */
+    height: 25px;
+    /* Size of the checked radio button */
+    background-color: #007bff;
+    /* Adjust color as needed */
+}
+
+.daliyPerQues input[type="radio"] {
+
+
+    background-color: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%) !important;
+
+
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.DailyQuizebutton-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.previous-button {
+    font-family: Poppins;
+    margin-top: 5px;
+    font-size: 24px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DailyQuize-previous-button {
+    font-family: Poppins;
+    margin-top: 5px;
+    font-size: 24px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    /* background-clip: text; */
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 157px;
+}
+
+.next-button {
+    font-family: Poppins;
+    margin-top: 5px;
+    font-size: 24px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.DailyQuize-next-button {
+    font-family: Poppins;
+    margin-top: 5px;
+    font-size: 24px;
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    /* background-clip: text; */
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 157px;
+}
+
+.questionNum {
+    background-color: #ffff;
+
+    border-radius: 50%;
+
+    width: 42px;
+    height: 42px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickImg {
+    width: 42px;
+    height: 42px;
+}
+
+#circlePostion {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4rem;
+
+}
+
+.DailyQuizQuestion {
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    padding: 2% 5%;
+}
+
+.relative.DailyRelative {
+    padding: 4rem;
+}
+
+.question-details {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.correct-answers {
+    width: 45%;
+}
+
+.incorrect-answers {
+    width: 45%;
+}
+.hdScroe {
+    background: linear-gradient(92.77deg, #761DE8 -2.94%, #29BDEC 56.14%);
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    padding: 2rem;
+
+}
+
+.hdScroeWrong {
+    color: rgb(169, 28, 28);
+    font-size: 25px;
+    padding: 2rem;
+}
+
+.question-detail {
+    padding: 1rem 0;
+}
+
+.selectedQue {
+    font-size: 21px;
+    padding: 0.5rem;
+    color: #ffffff;
+}
+
+.seleCorr {
+    color: #5dc15d;
+}
+
+.yourAns {
+    padding-bottom: 1rem;
+
+    color: #ffffff
+}
+.NoDataAval{
+    display: flex;
+    justify-content: center;
+}
+
+/* App.css */
+
+.text-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: to make text more readable */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pink-text {
+  color: rgb(243, 52, 83);
+  margin: 0;
+  font-size: 26px;
+}
+.white-text{
+  color: white;
+  margin: 0;
+  font-size: 18px;
+}
+@media only screen and (max-width: 1024px) {
+    .selectedQue {
+        font-size: 18px;
+        padding: 0.5rem;
+    }
+
+    .relative.DailyRelative {
+        padding: 3rem;
+    }
+
+    #circlePostion {
+
+        padding: 3rem;
+
+    }
+
+    .answer-options {
+
+        grid-gap: 22px;
+        margin: 3rem 0px 2.5rem 0px;
+    }
+
+    .DailyQuizanswer-options {
+        gap: 22px;
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0px 0rem 0px;
+        padding: 2% 6%
+    }
+
+    .DailyQuizebutton-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .questionNum {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .tickImg {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 776px) {
+
+.correct-answers {
+    width: 95%;
+}
+
+.incorrect-answers {
+    width: 95%;
+}
+}
+
+@media only screen and (max-width: 640px) {
+    .ansMain {
+        font-size: 18px;
+    }
+
+    .DailyQuizQuestion {
+        font-size: 24px;
+        padding: 4% 5%;
+    }
+
+    .relative.DailyRelative {
+        padding: 2rem;
+    }
+
+    #circlePostion {
+
+        padding: 2rem;
+
+    }
+
+    .questionNum {
+        padding: 0;
+    }
+
+    .answer-options {
+        display: flex;
+        flex-direction: column;
+
+
+        margin: 3rem 0px 2.5rem 0px;
+    }
+
+    .DailyQuizanswer-options {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 0px 0rem 0px;
+        padding: 2% 6%;
+    }
+
+    .quiz-container {
+
+        padding: 1rem;
+    }
+
+    .Dailyquiz-container {
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .question-count-question {
+        font-size: 22px;
+    }
+
+    .count-question-count {
+        font-size: 22px;
+    }
+
+    .question {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 0px 0px;
+    }
+
+    .answer-label {
+        font-size: 21px;
+    }
+
+    .answer-option input[type="radio"] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .previous-button {
+        font-size: 18px;
+        gap: 7px;
+    }
+
+    .next-button {
+        font-size: 18px;
+        gap: 1px;
+    }
+
+    .DailyQuize-previous-button {
+        font-size: 18px;
+        gap: 7px;
+    }
+
+    .DailyQuize-next-button {
+        font-size: 18px;
+        gap: 1px;
+        max-width: 123px;
+    }
+
+    .DailyQuize-previous-button {
+        font-size: 18px;
+        gap: 1px;
+        max-width: 123px;
+    }
+
+    .question-details {
+        flex-direction: column;
+    }
+
+    .hdScroe {
+
+        font-size: 20px;
+        padding: 1rem;
+
+    }
+
+    .hdScroeWrong {
+
+        font-size: 20px;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .relative.DailyRelative {
+        padding: 1rem;
+    }
+
+    #circlePostion {
+
+        padding: 1rem;
+
+    }
+
+    .question-count-question {
+        font-size: 18px;
+    }
+
+    .count-question-count {
+        font-size: 18px;
+    }
+
+    .question {
+
+        font-size: 20px;
+    }
+
+    .answer-label {
+        font-size: 19px;
+    }
+
+    .answer-option input[type="radio"] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .questionNum {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .tickImg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .DailyQuize-next-button {
+        font-size: 15px;
+        gap: 1px;
+        max-width: 100px;
+    }
+
+    .DailyQuize-previous-button {
+        font-size: 15px;
+        gap: 1px;
+        max-width: 100px;
+    }
+
+    .Dailyquiz-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}

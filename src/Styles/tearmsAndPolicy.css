@@ -1,0 +1,33 @@
+h1.policyHd {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 1rem 0rem;
+    text-align: left;
+}
+.termSbox{
+    padding: 0 20% 3rem 20%;
+}
+li.listVisit{
+ padding: 1rem 0rem;
+  list-style: circle !important;
+  list-style-position: inside !important;
+}
+.hdSumry {
+    padding: 1rem 0rem;
+    font-size: 21px;
+    font-weight: 700;
+}
+.tableList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1006px) {
+  .termSbox{
+    padding: 0 7% 3rem 7%;
+}
+h1.policyHd{
+    font-size: 20px;
+}
+}

@@ -1,0 +1,239 @@
+.book-main-container {
+  position: relative;
+  max-width: 1046px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bookimg {
+  max-width: 1000px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+}
+
+.book-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.storyDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.storyText {
+     width: 49%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    padding-left: 12%;
+    padding-top: 8%;
+    height: 100%;
+    padding-bottom: 4%;
+}
+
+.storyimg {
+  width: 50%;
+  height: 68%;
+}
+
+.differentStoryImg {
+  width: 80%;
+  height: 100%;
+}
+
+.storyLines {
+    width: 88%;
+    height: 100%;
+    color: #323232;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    overflow: auto;
+}
+
+.storyLines::-webkit-scrollbar {
+  height: 5px;
+  width: 10px;
+  padding-top: 10px;
+}
+
+.storyLines::-webkit-scrollbar-thumb {
+  background-color: hsl(263, 68%, 58%);
+  border-radius: 20px;
+}
+
+.storyLines::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+.BookPagination {
+  position: absolute;
+  right: 12%;
+  bottom: 10%;
+  left: 68%;
+  transform: rotate(-4deg);
+}
+
+.storyHd {
+  padding: 4rem 0 2rem 0;
+}
+
+.DataimgStory {
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    object-fit: cover;
+}
+.theEnd {
+    font-size: 45px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 60%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .storyLines {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+
+  .pgBtns {
+    font-size: 12px;
+  }
+
+  .storyHd {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .differentStoryImg {
+    width: 75%;
+  }
+  .theEnd {
+    font-size: 45px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 60%;
+}
+}
+
+@media only screen and (max-width: 1025px) {
+  .storyLines {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .theEnd {
+    font-size: 45px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 60%;
+}
+}
+@media only screen and (max-width: 962px) {
+  .storyLines {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  .theEnd {
+    font-size: 35px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 70%;
+}
+}
+
+@media only screen and (max-width: 640px) {
+  .storyLines {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  .storyHd {
+    padding: 3rem 0 2rem 0;
+  }
+  .theEnd {
+    font-size: 28px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 77%;
+}
+
+  /* .storyText {
+    padding-left: 4rem;
+    padding-top: 4rem;
+   
+} */
+  .pgBtns {
+    font-size: 10px;
+  }
+
+  .BookPagination {
+    right: 12%;
+    bottom: 10%;
+    left: 50%;
+  }
+
+  .differentStoryImg {
+    width: 76%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .storyLines {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+  }
+  .theEnd {
+    font-size: 15px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 75%;
+}
+
+  /* .storyText {
+    padding-left: 2rem;
+    padding-top: 2rem;
+   
+} */
+  .pgBtns {
+    font-size: 10px;
+  }
+
+  .BookPagination {
+    right: 12%;
+    bottom: 10%;
+    left: 50%;
+  }
+
+  .storyHd {
+    padding: 2rem 0 2rem 0;
+    line-height: 30px !important;
+  }
+
+  .differentStoryImg {
+    width: 73%;
+  }
+}

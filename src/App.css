@@ -1,0 +1,51 @@
+
+.App {
+  text-align: center;
+}
+body{
+  background-color: var(--background-color);
+  
+  /* padding: 1rem ; */
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+}
+
+
+ul,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.navItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.makeDropSelect :hover{
+      background: gray !important;
+}
+.css-1la267r-MuiAreaElement-root {
+    stroke: none;
+    background-image: linear-gradient(180deg, #761DE8 0%, rgba(160, 102, 255, 0.1) 100%) !important;
+    fill: #751de8c0 !important;
+}
+tspan {
+    color: white !important;
+}
+@media only screen and (max-width: 780px) {
+  body{
+  
+    padding: 0rem 0rem;
+  }
+}
