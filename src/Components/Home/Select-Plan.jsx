@@ -44,17 +44,24 @@ const makePayment = async (title, Payprice, isFree, id, priceId) => {
     let response;
 
     if (!isFree) {
-      response = await fetch("http://localhost:9000/api/Free-Payment", {
-        method: "POST",
-        headers,
-        body: JSON.stringify(body),
-      });
+      // response = await fetch("http://localhost:9000/api/Free-Payment", {
+      response = await fetch(
+        "https://brainly-backend-june-21.onrender.com/api/Free-Payment",
+        {
+          method: "POST",
+          headers,
+          body: JSON.stringify(body),
+        }
+      );
     } else {
-      response = await fetch("http://localhost:9000/api/Payments", {
-        method: "POST",
-        headers,
-        body: JSON.stringify(body),
-      });
+      response = await fetch(
+        "https://brainly-backend-june-21.onrender.com/api/Payments",
+        {
+          method: "POST",
+          headers,
+          body: JSON.stringify(body),
+        }
+      );
     }
 
     const session = await response.json();
