@@ -159,14 +159,14 @@ const PlanCard = ({
               }
               className="justify-center items-center px-12 py-4 my-2 font-semibold text-center bg-white shadow-lg text-purple-600 rounded-full w-[100%]"
             >
-              {buttonText}
+              {title === ActivePlan ? "Active Plan" : buttonText}
             </button>
           ) : (
             <button
               onClick={() => navigate("/SignUpPage")}
               className="justify-center items-center px-12 py-4 my-2 font-semibold text-center bg-white shadow-lg text-purple-600 rounded-full w-[100%]"
             >
-              {buttonText}
+              {title === ActivePlan ? "Active Plan" : buttonText}
             </button>
           )
         ) : isAuthenticated ? (
@@ -177,14 +177,14 @@ const PlanCard = ({
                   ? makePayment(title, Payprice, isFree, id, priceId)
                   : makePayment(title, Payprice, isFree, id, priceId)
               }
-              btnText={buttonText}
+              btnText={title === ActivePlan ? "Active Plan" : buttonText}
             />
           </div>
         ) : (
           <div className="justify-center sm:self-start self-center m-2 font-semibold tracking-normal text-black rounded-[1000px]">
             <Button
               onClickFunction={() => navigate("/SignUpPage")}
-              btnText={buttonText}
+              btnText={title === ActivePlan ? "Active Plan" : buttonText}
             />
           </div>
         )}
